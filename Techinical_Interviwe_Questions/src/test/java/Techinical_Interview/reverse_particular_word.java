@@ -9,9 +9,6 @@ public class reverse_particular_word {
 		Scanner s = new Scanner(System.in);
 		String name = s.nextLine();
 		char ch[] = new char[name.length()];
-		for (int i = 0; i < name.length(); i++) {
-			ch[i] = name.charAt(i);
-		}
 		int i = 0;
 		int wordcount = 0;
 		while (i < ch.length) {
