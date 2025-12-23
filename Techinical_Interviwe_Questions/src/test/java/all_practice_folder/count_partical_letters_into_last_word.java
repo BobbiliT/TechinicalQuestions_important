@@ -6,19 +6,18 @@ public class count_partical_letters_into_last_word {
 		String name = " my name is tejesh ";
 		System.out.println(wordcount(name));
 	}
+
 	public static int wordcount(String s) {
-		
+
 		String word = s.trim();
 		int count = 0;
-		for(int i=word.length()-1; i>=0; i--) {
-			if(word.charAt(i)!=' ') {
+		for (int i = word.length() - 1; i >= 0; i--) {
+			if (word.charAt(i) != ' ') {
 				count++;
-			}
-			else {
+			} else {
 				break;
 			}
 		}
 		return count;
 	}
 }
-
