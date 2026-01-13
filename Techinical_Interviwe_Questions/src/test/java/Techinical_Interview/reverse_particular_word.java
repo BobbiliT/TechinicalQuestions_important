@@ -8,6 +8,7 @@ public class reverse_particular_word {
 		System.out.println("enter your name ");
 		Scanner s = new Scanner(System.in);
 		String name = s.nextLine();
+		int num = s.nextInt();
 		char ch[] = name.toCharArray();
 		int i = 0;
 		int wordcount = 0;
@@ -21,7 +22,7 @@ public class reverse_particular_word {
 			}
 			int end = i - 1;
 			wordcount++;
-			if (wordcount == 4) {
+			if (wordcount == num) {
 				while (start < end) {
 					char temp = ch[start];
 					ch[start] = ch[end];

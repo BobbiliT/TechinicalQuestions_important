@@ -18,6 +18,9 @@ public class sum_of_two_numbers_found_target {
 					break;
 				}
 			}
+			if (found) {  // if you get one matching pair then use this line
+				break;
+			}
 		}
 		if (!found) {
 			System.out.println("no pair found with sum = " + target);
